@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./assets/css/joycon.css">
     <title>Document</title>
 </head>
-<body>
+<body id="screen">
     <div class="switch">
     <div class="body">
       <div class="volume"></div>
@@ -46,9 +46,11 @@
       
       <div class="stick"></div>
       <div class="start"></div>
-      <div class="home"></div>
+      <div class="home" onclick="toggleFullScreen()"></div>
       <div class="shoulder r"></div>
     </div>
   </div>
+
+<script src="./assets/js/main.js"></script>
 </body>
 </html>
