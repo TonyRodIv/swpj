@@ -5,8 +5,8 @@ let larguraFixed = window.innerWidth;
 
 function verificarLargura() {
     let largura = window.innerWidth;
-    if (larguraFixed < 1200) {
-        if (largura < 1200) {
+    if (larguraFixed < 860) {
+        if (largura < 860) {
             rotateScreen.style.display = 'flex'
             rotateScreen.style.animation = 'none'
             switchBody.style.display = "none"
