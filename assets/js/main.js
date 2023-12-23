@@ -1,30 +1,18 @@
 
 const rotateScreen = document.getElementById('error');
 const switchBody = document.getElementById('switchBody');
-let larguraFixed = window.innerWidth;
 
 function verificarLargura() {
     let largura = window.innerWidth;
-    if (larguraFixed < 860) {
-        if (largura < 860) {
-            rotateScreen.style.display = 'flex'
-            rotateScreen.style.animation = 'none'
-            switchBody.style.display = "none"
-        } else {
-            rotateScreen.style = 'animation: fade-out 1.5s 0.8s; animation-fill-mode: forwards;'
-            function rotate() {
-                rotateScreen.style.display = 'none'
-            }
-            setTimeout(rotate, 1600)
-            switchBody.style.display = "block"
-        }
+    if (largura < 860) {
+        rotateScreen.style.display = 'flex'
+        switchBody.style.display = "none"
     } else {
         rotateScreen.style.display = 'none'
         switchBody.style.display = "block"
-
     }
 }
-verificarLargura()
+verificarLargura();
 window.addEventListener("resize", verificarLargura);
 function toggleFullScreen() {
     var doc = window.document;
