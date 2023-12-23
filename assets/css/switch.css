@@ -129,6 +129,7 @@ html {
     border-left-width: 1.5em;
     border-right-width: 1.5em;
     border-radius: 0.375em;
+    z-index: 2;
   }
   
   .logo {
@@ -173,6 +174,8 @@ html {
     background-color: #fff;
     border-radius: 0 0.8125em 0.8125em 0;
     animation: logo-right 2s linear infinite;
+
+    
   }
   
   .icon-part::before {
