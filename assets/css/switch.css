@@ -123,7 +123,8 @@ html {
     height: 9em;
     color: #fff;
     font-family: "Montserrat", sans-serif;
-    background-color: #e60012;
+    /* background-color: #e60012; */
+    animation: mudar-cor 10s infinite;
     border: 1em solid #000;
     border-left-width: 1.5em;
     border-right-width: 1.5em;
@@ -138,6 +139,7 @@ html {
   .logo h1 {
     font-size: 1.0625em;
     letter-spacing: 0.125em;
+    text-align: center;
   }
   
   .logo h1 span {
@@ -192,6 +194,7 @@ html {
   .icon-part.right::before {
     top: 1.5em;
     background-color: #e60012;
+    animation: mudar-cor 10s infinite;
   }
   
   @keyframes logo-right {

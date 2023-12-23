@@ -4,7 +4,7 @@ const switchBody = document.getElementById('switchBody');
 
 function verificarLargura() {
     let largura = window.innerWidth;
-    if (largura < 860) {
+    if (largura < 800) {
         rotateScreen.style.display = 'flex'
         switchBody.style.display = "none"
     } else {
