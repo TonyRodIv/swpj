@@ -2,6 +2,23 @@
     .joy-con{
         display: none;
     }
+    .offJC{
+      display: flex;
+      gap: 10px;
+      width: 50px;
+      position: absolute;
+      
+    }
+    .btnOffJC{
+      width: 20px;
+      height: 20px;
+      background-color: rgb(240, 255, 254);
+    }
+    .btnOffJC2{
+      width: 20px;
+      height: 20px;
+      background-color: rgb(165, 16, 66);
+    }
 }
 @media only screen and (min-width:1280px){
     .body{
