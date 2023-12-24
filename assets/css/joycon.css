@@ -10,10 +10,13 @@
 .joy-con {
     position: absolute;
     top: 0;
-    width: 7.4rem;
+    min-width: 7rem;
+    width: 100%;
+    max-width: 7.4rem;
     height: 100%;
     backface-visibility: hidden;
     border: 0;
+    /* border: 1px solid red; */
   }
   
   .joy-con.left {

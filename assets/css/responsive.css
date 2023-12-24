@@ -1,0 +1,42 @@
+@media only screen and (max-width:840px){
+    .joy-con{
+        display: none;
+    }
+}
+@media only screen and (min-width:1280px){
+    .body{
+        width: 23em;
+        height: 14em;
+    }
+    .joy-con {
+        min-width: 9rem;
+      }
+      .screen {
+        max-height: 88%;
+      }
+      .stick{
+        width: 2.2em;
+        height: 2.2em;
+      }
+      .right .stick{
+        top: 8em;
+      }
+      .button-group{
+        width: 2.6em;
+        height: 2.6em;
+      }
+      .button{
+        width: 1.16em;
+        height: 1.16em;
+        margin: -0.55em;
+      }
+      .right .button-group, .left .stick{
+        top: 2.8em;
+      }
+      .left .button-group{
+        top: 6.8em;
+      }
+      .home,.capture{
+        bottom: 1.8125em;
+      }
+}
