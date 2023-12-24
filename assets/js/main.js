@@ -2,6 +2,7 @@
 const rotateScreen = document.getElementById('error');
 const switchBody = document.getElementById('switchBody');
 const screenArea = document.getElementById('screenArea');
+var joycon = document.querySelectorAll('.joy-con');
 
 function verificarLargura() {
     let largura = window.innerWidth;
@@ -19,8 +20,6 @@ verificarLargura();
 window.addEventListener("resize", verificarLargura);
 
 function noJoyconF11() {
-    var joycon = document.querySelectorAll('.joy-con');
-
     joycon.forEach(function (element) {
         element.style.display = 'none';
     });
