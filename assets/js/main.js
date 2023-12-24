@@ -24,7 +24,7 @@ function noJoyconF11() {
     joycon.forEach(function (element) {
         element.style.display = 'none';
     });
-    screenArea.style = 'height: 100vh; width: 100vh;'
+    screenArea.style = 'height: 100vh; width: 100vw;'
 }
 
 function toggleFullScreen() {
