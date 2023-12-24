@@ -1,10 +1,13 @@
 
 const rotateScreen = document.getElementById('error');
 const switchBody = document.getElementById('switchBody');
+const screenArea = document.getElementById('screenArea');
 
 function verificarLargura() {
     let largura = window.innerWidth;
-    if (largura < 450) {
+    console.log('verificando largura...', largura)
+    if (largura < 650) {
+        console.log('Largura incompatível')
         rotateScreen.style.display = 'flex'
         switchBody.style.display = "none"
     } else {
@@ -14,6 +17,16 @@ function verificarLargura() {
 }
 verificarLargura();
 window.addEventListener("resize", verificarLargura);
+
+function noJoyconF11() {
+    var joycon = document.querySelectorAll('.joy-con');
+
+    joycon.forEach(function (element) {
+        element.style.display = 'none';
+    });
+    screenArea.style = 'height: 100vh; width: 100vh;'
+}
+
 function toggleFullScreen() {
     var doc = window.document;
     var docEl = doc.documentElement;
